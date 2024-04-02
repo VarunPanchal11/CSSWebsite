@@ -1,0 +1,361 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li, nav, header, section, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    background-color: #005792;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header .slogan {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style-type: none;
+    background-color: #003f63;
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #002b40;
+    transition: background-color 0.3s;
+}
+
+/* News Section Styling */
+#news {
+    padding: 20px;
+    background: #e8f1f2;
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.news-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.news-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.news-title, .news-date {
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #003f63;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .footerLogo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+footer .col {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Grid for News Items */
+@media screen and (max-width: 768px) {
+    .news-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .news-container {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul li a {
+        padding: 10px;
+    }
+}
+
+/* ------------------- COURSES PAGE ------------------- */
+
+/* Styling for the fixed header */
+.fixed-header {
+    background-color: #004d99; 
+    color: white;
+    width: 100%;
+    position: fixed; /* Fixes the header at the top of the viewport */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; 
+}
+
+/* Styling for the header logo */
+.header-logo {
+    height: 110px; 
+    width: auto; 
+    margin-left: 20px;
+}
+
+.top-nav ul {
+    list-style-type: none; /* Removes bullet points from the list */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Center the links to the logo */
+}
+
+/* Styling for each navigation item */
+.top-nav ul li {
+    margin: 0 10px;
+}
+
+/* Styling for navigation links */
+.top-nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for navigation links */
+.top-nav ul li a:hover {
+    color: #47d1ff; 
+}
+
+/* Padding adjustment for pages with a fixed header */
+.page-with-fixed-header {
+    padding-top: 150px;
+}
+
+/* Styling for the courses list */
+.courses-table {
+    width: 100%; 
+    border-collapse: collapse; /* Collapses border to avoid double lines */
+    margin-top: 20px; 
+}
+
+/* Table header and cell styles */
+.courses-table th, .courses-table td {
+    border: 1px solid #ddd; 
+    padding: 8px; 
+    text-align: left; /* Align text to the left */
+}
+
+/* Header row styles */
+.courses-table th {
+    background-color: #004d99; 
+    color: white; 
+    padding-top: 12px; 
+    padding-bottom: 12px; 
+}
+
+/* Alternating row background for readability */
+.courses-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover effect for table rows */
+.courses-table tr:hover {
+    background-color: #ddd; 
+}
+
+/* Responsive design adjustments for smaller screens */
+@media (max-width: 600px) {
+    .courses-table {
+        display: block;
+        overflow-x: auto; /* Allows table to scroll horizontally on small screens */
+    }
+}
+
+/* ------------------- Resources PAGE ------------------- */
+/* Specific styles for the Student Resources page */
+
+.page-with-fixed-header {
+    padding-top: 80px; /* Adjust this value based on the actual height of your fixed header */
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #005792;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header-logo {
+    height: 60px; /* Adjust as needed */
+}
+
+.top-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.top-nav li {
+    padding: 10px 15px;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.top-nav a:hover {
+    color: #4CAF50;
+}
+
+.resource-category {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-bottom: 30px; /* Spacing between sections */
+}
+
+.resource-list a {
+    display: block;
+    color: #005792;
+    padding: 5px 0;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.resource-list a:hover {
+    color: #003f63;
+    padding-left: 10px;
+}
+
+.upload-section {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    background: #e8f1f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.upload-section form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.upload-section input[type="file"] {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.upload-section input[type="submit"] {
+    background: #005792;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.upload-section input[type="submit"]:hover {
+    background: #003f63;
+}
+
+footer {
+    background-color: #003f63;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .top-nav ul {
+        padding-top: 10px;
+    }
+
+    .resource-category, .upload-section {
+        width: 90%;
+        padding: 10px;
+    }
+}

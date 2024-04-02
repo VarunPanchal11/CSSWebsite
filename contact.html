@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Used for proper rendering and touch zooming on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Computer Science Hub - Courses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body class="page-with-fixed-header">
+    
+    <!-- Fixed Header Navigation -->
+
+    <header class="fixed-header">
+        <div class="header-content">
+            <img src="css-logo.png" alt="Computer Science Hub Logo" class="header-logo">
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="resources.html">Student Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+    <form id="contactForm" action="contact.php" method="post">
+
+        <h1>Contact Us</h1>
+
+        <br>
+        <br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <input type="submit" value="Send Message">
+    </form>
+
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- Footer that also contains Navigation -->
+
+    <footer>
+        <img src="css-logo.png" class="footerLogo" alt="Computer Science Hub Logo">
+        <div class="col">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="tutorials.html">Tutorials</a>
+            <a href="resources.html">Student Resources</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="copyright">
+            <p>© 2024 Computer Science Hub</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
